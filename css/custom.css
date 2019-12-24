@@ -1274,11 +1274,11 @@ body > .loading-content {
   font-size: 80px;
   line-height: 1em;
   font-family: 'Poppins', sans-serif;
-  color: #4ba0e8;
+  color: #FFC0CB; //#4ba0e8;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-  text-stroke: 1px #4ba0e8;
-  -webkit-text-stroke: 1px #4ba0e8;
+  text-stroke: 1px #FFC0CB; //#4ba0e8;
+  -webkit-text-stroke: 1px #FFC0CB; //#4ba0e8;
 }
 @media (max-width: 767px) {
   .loading-content .loaded-text {
