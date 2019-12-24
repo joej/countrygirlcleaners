@@ -1295,8 +1295,8 @@ body > .loading-content {
   -webkit-text-fill-color: #4ba0e8;
 }
 .loading-content .loaded-text:before {
-  text-stroke: 1px #4ba0e8;
-  -webkit-text-stroke: 1px #4ba0e8;
+  text-stroke: 1px ##FFC0CB; //4ba0e8;
+  -webkit-text-stroke: 1px #FFC0CB; //4ba0e8;
   font-weight: 600;
   clip-path: inset(100% 0 0 0);
   -webkit-clip-path: inset(100% 0 0 0);
@@ -1309,8 +1309,8 @@ body > .loading-content {
   -webkit-clip-path: inset(0 0 0 0);
 }
 .loading-content .loaded-text:after {
-  text-stroke: 1px #4ba0e8;
-  -webkit-text-stroke: 1px #4ba0e8;
+  text-stroke: 1px #FFC0CB; //4ba0e8;
+  -webkit-text-stroke: 1px #FFC0CB; //4ba0e8;
   font-weight: 700!important;
   clip-path: inset(100% 0 0 0);
   -webkit-clip-path: inset(100% 0 0 0);
