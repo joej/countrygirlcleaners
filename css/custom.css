@@ -1292,10 +1292,10 @@ body > .loading-content {
   left: 0;
   color: #FFC0CB; //4ba0e8;
   content: attr(data-text);
-  -webkit-text-fill-color: FFC0CB; //#4ba0e8;
+  -webkit-text-fill-color: #FFC0CB; //#4ba0e8;
 }
 .loading-content .loaded-text:before {
-  text-stroke: 1px ##FFC0CB; //4ba0e8;
+  text-stroke: 1px #FFC0CB; //4ba0e8;
   -webkit-text-stroke: 1px #FFC0CB; //4ba0e8;
   font-weight: 600;
   clip-path: inset(100% 0 0 0);
