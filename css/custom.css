@@ -1290,9 +1290,9 @@ body > .loading-content {
   position: absolute;
   top: 0;
   left: 0;
-  color: #4ba0e8;
+  color: #FFC0CB; //4ba0e8;
   content: attr(data-text);
-  -webkit-text-fill-color: #4ba0e8;
+  -webkit-text-fill-color: FFC0CB; //#4ba0e8;
 }
 .loading-content .loaded-text:before {
   text-stroke: 1px ##FFC0CB; //4ba0e8;
