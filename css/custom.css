@@ -5525,6 +5525,9 @@ body.page-shop .page-header-top-middle {
   color: #fff;
   z-index: 100;
 }
+.center-block { display:block; margin-right:auto; margin-left:auto; }
+
+#joeSlider .slide-content.center,
 #mainSlider .slide-content.center {
   text-align: center;
 }

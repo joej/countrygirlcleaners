@@ -98,7 +98,29 @@
 				}
 
 				// main slider
-				if (blocks.mainSlider.length) {
+                if ( $('#joeSlider').length) {
+
+                    $('#joeSlider').slick({
+                        lazyLoad: 'ondemand',
+
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+
+                        centerMode: true, centerPadding: '60px',
+                        //adaptiveHeight: true,
+                        variableWidth: true,
+
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        dots: false,
+                        infinite: true,
+                        });
+
+                    }
+
+                var DOSLIDER = false;
+
+				if (blocks.mainSlider.length && DOSLIDER) {
 					var $el = blocks.mainSlider;
 					if ($el.children().size() < 3) {
 						$el.find('.mask').removeClass('mask');
@@ -278,7 +300,7 @@
 						after_label: 'after'
 					});
 				}
-				
+
 				// Isotope Gallery
 				if (blocks.isotopeGalleryPage.length) {
 					var $gallery = blocks.isotopeGalleryPage;
@@ -297,7 +319,7 @@
 					});
 					isotopeFilters($gallery);
 				}
-				
+
 				// Isotope Filters (for Gallery Page)
 				function isotopeFilters(gallery) {
 					var $gallery = $(gallery);
@@ -335,8 +357,10 @@
 						infinite: true,
 						autoplay: true,
 						autoplaySpeed: 2500,
-						dots: false,
-						arrows: true,
+
+						//dots: true,
+                        arrows: true,
+
 						responsive: [{
 							breakpoint: 1299,
 							settings: {
@@ -1180,7 +1204,7 @@
 					zoom: mapZoom,
 					scrollwheel: false, // The latitude and longitude to center the map (always required)
 					center: new google.maps.LatLng(lat, lng),
-					// How you would like to style the map. 
+					// How you would like to style the map.
 					// This is where you would paste any style found on Snazzy Maps.
 					styles: [{
 						"featureType": "water",
@@ -1299,7 +1323,7 @@
 						}]
 					}]
 				};
-				// Get the HTML DOM element that will contain your map 
+				// Get the HTML DOM element that will contain your map
 				// We are using a div with id="map" seen below in the <body>
 				var mapElement = document.getElementById(id);
 				// Create the Google Map using our element and options defined above
